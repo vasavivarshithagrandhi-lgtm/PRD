@@ -68,7 +68,3 @@ function runDraw() {
 
 loadScores();
 
-const supabase = window.supabase.createClient(
-  "https://supabase.com/dashboard/project/qrhdzyjnstzniwmbpyrh/settings/api-keys",
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFyaGR6eWpuc3R6bml3bWJweXJoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY5MjczOTQsImV4cCI6MjA5MjUwMzM5NH0.GpPsumI_TgTr1EYrp2pF-VSE-5Z3XpD8mNOet-JR5RI"
-);
