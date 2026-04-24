@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Admin Dashboard</h2>
+
+  <div class="card">
+    <h3>Run Draw</h3>
+    <button onclick="runDraw()">Generate Draw</button>
+    <p id="drawResult"></p>
+  </div>
+
+  <div class="card">
+    <h3>Manage Charities</h3>
+    <input type="text" id="newCharity" placeholder="New Charity">
+    <button onclick="addCharity()">Add</button>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

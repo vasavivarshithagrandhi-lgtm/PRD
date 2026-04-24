@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>User Dashboard</h2>
+
+  <!-- Subscription -->
+  <div class="card">
+    <h3>Subscription</h3>
+    <p>Status: Active</p>
+    <button>Monthly Plan</button>
+    <button>Yearly Plan</button>
+  </div>
+
+  <!-- Add Score -->
+  <div class="card">
+    <h3>Add Score</h3>
+    <input type="number" id="score" placeholder="Score (1-45)">
+    <input type="date" id="date">
+    <p>Only last 5 scores allowed</p>
+    <button onclick="addScore()">Add Score</button>
+  </div>
+
+  <!-- Scores -->
+  <div class="card">
+    <h3>Your Scores</h3>
+    <ul id="scoreList"></ul>
+  </div>
+
+  <!-- Charity -->
+  <div class="card">
+    <h3>Select Charity</h3>
+    <select id="charity">
+      <option>Education Fund</option>
+      <option>Health Support</option>
+      <option>Child Welfare</option>
+    </select>
+    <button onclick="saveCharity()">Save</button>
+  </div>
+
+  <!-- Participation -->
+  <div class="card">
+    <h3>Draw Participation</h3>
+    <p>Draws Entered: 0</p>
+    <p>Next Draw: Monthly</p>
+  </div>
+
+  <!-- Winnings -->
+  <div class="card">
+    <h3>Winnings</h3>
+    <p>Total Won: ₹0</p>
+    <p>Status: No winnings yet</p>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
